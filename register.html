@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add viewport for responsiveness -->
+    <title>Register - Internship Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="register-container"> <!-- Change the container class to register-container -->
+        <img src="{{ url_for('static', filename='cropped-INTERNSHIPBUDDIES-3-150x150.png') }}" alt="Internship Buddies Logo" class="logo">
+        <h2>Register</h2>
+        <form action="/register" method="POST">
+            <!-- Input fields for student data -->
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="institution" placeholder="Institution" required>
+            <input type="text" name="category" placeholder="Category" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="contact" placeholder="Contact Info" required>
+            <input type="text" name="gender" placeholder="Gender" required>
+            <input type="text" name="area_of_interest" placeholder="Area of Interest" required>
+            <input type="text" name="nationality" placeholder="Nationality" required>
+            <input type="text" name="physically_handicapped" placeholder="Physically Handicapped" required>
+            <input type="text" name="academic_qualifications" placeholder="Academic Qualifications" required>
+            <input type="text" name="preferred_locations" placeholder="Preferred Locations" required>
+            <input type="text" name="skills" placeholder="Skills" required>
+            <input type="text" name="languages_known" placeholder="Languages Known" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="/">Login</a></p>
+    </div>
+</body>
+</html>

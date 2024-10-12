@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations - Internship Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="recommendation-container">
+        <h2>Internship Recommendations</h2>
+        <ul>
+            {% for index, row in internships.iterrows() %}
+                <li>
+                    <h3>{{ row['Profile'] }} at {{ row['Company'] }}</h3>
+                    <p>Location: {{ row['Location'] }}</p>
+                    <p>Start Date: {{ row['Start Date'] }}</p>
+                    <p>Duration: {{ row['Duration'] }}</p>
+                    <p>Stipend: {{ row['Stipend'] }}</p>
+                    <p>Skills Required: {{ row['Skills Required'] }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

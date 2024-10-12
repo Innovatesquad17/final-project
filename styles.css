@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fallback background color */
+    background-image: url("{{ url_for('static', filename='interbuddies.jpg') }}"); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+}
+
+.login-container, .register-container, .recommendation-container {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Limit the maximum width */
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.logo {
+    width: 100px; /* Adjust the width of the logo as needed */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+h2 {
+    color: #333;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Add border to input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+}
+
+button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Rounded corners for list items */
+}
